@@ -145,9 +145,7 @@ The dashboard shows:
 - Business Listings Table
 
 ---
-
 ## Screenshots
-### Dashboard Overview## Screenshots
 
 ### Dashboard Overview
 
@@ -170,9 +168,20 @@ The business listings table supports search, category filtering, and pagination.
 The backend APIs are documented and tested using FastAPI Swagger UI.
 
 ![Swagger API](screenshots/Swagger.png)
+
 ---
 
+## Challenges Faced
 
+During the development of this project, I encountered a few challenges:
+
+* Loading all business listings from the website required repeatedly clicking the **"View More"** button using Selenium.
+* Some business listings did not contain complete information, such as phone numbers or addresses, so missing values had to be handled.
+* Mapping the scraped CSV data correctly into the MySQL database required careful validation of column names and data types.
+* Connecting the React frontend with the FastAPI backend involved configuring API requests and resolving CORS-related issues.
+* Designing a responsive dashboard with charts, search, filters, and pagination while keeping the interface clean and easy to use.
+
+These challenges helped me improve my understanding of web scraping, database integration, REST API development, and frontend-backend communication.
 
 
 ---
